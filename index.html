@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Social, Cultural e Ambiental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .caixa-principal {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .caixa-perguntas {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .caixa-alternativas {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #5c6bc0;
+            color: white;
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3f4c96;
+        }
+
+        .caixa-resultado {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .texto-resultado {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa-principal">
+        <div class="caixa-perguntas">Bem-vindo ao Quiz! Vamos começar...</div>
+        <div class="caixa-alternativas"></div>
+        <div class="caixa-resultado" style="display: none;">
+            <div class="texto-resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

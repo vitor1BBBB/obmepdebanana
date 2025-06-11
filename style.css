@@ -1,0 +1,86 @@
+:root {
+    /* Definindo cores mais suaves e claras */
+    --cor-fundo: #F1F1F1; /* Fundo suave claro */
+    --cor-principal: #FFFFFF; /* Branco para o conteúdo principal */
+    --cor-secundaria: #007BFF; /* Azul suave */
+    --cor-destaque: #0061A8; /* Azul escuro para detalhes */
+    --cor-texto: #333333; /* Texto escuro para boa leitura */
+    --cor-borda: #DDDDDD; /* Bordas sutis */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fonte mais limpa */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid var(--cor-borda);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2rem; /* Maior tamanho para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do botão */
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: translateY(-2px); /* Animação de levitação ao passar o mouse */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--cor-destaque);
+}
+
+button:active {
+    transform: translateY(1px); /* Efeito de "pressionado" no clique */
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--cor-texto);
+}
+
+.caixa-resultado {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.texto-resultado {
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
